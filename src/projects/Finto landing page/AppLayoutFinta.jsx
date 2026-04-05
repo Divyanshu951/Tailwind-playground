@@ -7,7 +7,6 @@ import Hero from "./components/Hero";
 function AppLayoutFinta() {
   useEffect(function () {
     document.title = "Finta - UI Clone";
-
     return () => (document.title = "Tailwind-playground ");
   }, []);
 
