@@ -1,7 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.title = "Responsive design ";
+
+    return () => (document.title = "Tailwind Playground");
+  }, []);
 
   return (
     <nav className="relative mx-auto max-w-4xl md:mt-4">
