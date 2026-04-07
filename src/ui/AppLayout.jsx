@@ -4,6 +4,8 @@ function AppLayout() {
   const projects = [
     { title: "finta landing page", path: "finta" },
     { title: "cobalt landing page", path: "cobalt" },
+    { title: "Aceternity themed keyboard", path: "keyboard" },
+    { title: "Responsive design", path: "responsive" },
   ];
 
   return (
