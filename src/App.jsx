@@ -3,6 +3,8 @@ import AppLayout from "./ui/AppLayout";
 import Error from "./ui/Error";
 import AppLayoutFinta from "./projects/Finto landing page/AppLayoutFinta";
 import AppLayoutCobalt from "./projects/cobalt Landing page/AppLayoutCobalt";
+import AppLayoutKeyboard from "./projects/Keyboard by aceternity/AppLayoutKeyboard";
+import AppLayoutResponsive from "./projects/responsive/AppLayoutResponsive";
 
 const router = createBrowserRouter([
   { path: "/", element: <AppLayout />, errorElement: <Error /> },
@@ -14,6 +16,16 @@ const router = createBrowserRouter([
   {
     path: "/cobalt",
     element: <AppLayoutCobalt />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/keyboard",
+    element: <AppLayoutKeyboard />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/responsive",
+    element: <AppLayoutResponsive />,
     errorElement: <Error />,
   },
 ]);
