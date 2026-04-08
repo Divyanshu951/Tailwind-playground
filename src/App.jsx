@@ -5,6 +5,8 @@ import AppLayoutFinta from "./projects/Finto landing page/AppLayoutFinta";
 import AppLayoutCobalt from "./projects/cobalt Landing page/AppLayoutCobalt";
 import AppLayoutKeyboard from "./projects/Keyboard by aceternity/AppLayoutKeyboard";
 import AppLayoutResponsive from "./projects/responsive/AppLayoutResponsive";
+import AppLayoutDarkTheme from "./projects/implementing dark theme/AppLayoutDarkTheme";
+import AppLayoutGrid from "./projects/grid/AppLayoutGrid";
 
 const router = createBrowserRouter([
   { path: "/", element: <AppLayout />, errorElement: <Error /> },
@@ -26,6 +28,16 @@ const router = createBrowserRouter([
   {
     path: "/responsive",
     element: <AppLayoutResponsive />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/dark-theme",
+    element: <AppLayoutDarkTheme />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/grid",
+    element: <AppLayoutGrid />,
     errorElement: <Error />,
   },
 ]);

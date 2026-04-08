@@ -6,6 +6,8 @@ function AppLayout() {
     { title: "cobalt landing page", path: "cobalt" },
     { title: "Aceternity themed keyboard", path: "keyboard" },
     { title: "Responsive design", path: "responsive" },
+    { title: "Implementing dark theme", path: "dark-theme" },
+    { title: "Grid", path: "grid" },
   ];
 
   return (
