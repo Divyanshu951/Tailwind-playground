@@ -8,6 +8,7 @@ function AppLayoutGrid() {
           <Card />
           <Card />
           <Card className="col-span-2" />
+          <Card className="col-span-2" />
         </div>
       </Container>
     </div>
