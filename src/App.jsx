@@ -7,6 +7,7 @@ import AppLayoutKeyboard from "./projects/Keyboard by aceternity/AppLayoutKeyboa
 import AppLayoutResponsive from "./projects/responsive/AppLayoutResponsive";
 import AppLayoutDarkTheme from "./projects/implementing dark theme/AppLayoutDarkTheme";
 import AppLayoutGrid from "./projects/grid/AppLayoutGrid";
+import AppLayoutMasking from "./projects/masking/AppLayoutMasking";
 
 const router = createBrowserRouter([
   { path: "/", element: <AppLayout />, errorElement: <Error /> },
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
   {
     path: "/grid",
     element: <AppLayoutGrid />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/masking",
+    element: <AppLayoutMasking />,
     errorElement: <Error />,
   },
 ]);
