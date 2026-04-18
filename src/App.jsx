@@ -8,6 +8,7 @@ import AppLayoutResponsive from "./projects/responsive/AppLayoutResponsive";
 import AppLayoutDarkTheme from "./projects/implementing dark theme/AppLayoutDarkTheme";
 import AppLayoutGrid from "./projects/grid/AppLayoutGrid";
 import AppLayoutMasking from "./projects/masking/AppLayoutMasking";
+import AppLayoutHF from "./projects/hoverFocusAndOtherState/AppLayoutHF";
 
 const router = createBrowserRouter([
   { path: "/", element: <AppLayout />, errorElement: <Error /> },
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
   {
     path: "/masking",
     element: <AppLayoutMasking />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/hover-focus-n-other-state",
+    element: <AppLayoutHF />,
     errorElement: <Error />,
   },
 ]);

@@ -9,6 +9,10 @@ function AppLayout() {
     { title: "Implementing dark theme", path: "dark-theme" },
     { title: "Grid", path: "grid" },
     { title: "Masking and rest", path: "masking" },
+    {
+      title: "Hover, Focus and other state",
+      path: "hover-focus-n-other-state",
+    },
   ];
 
   return (
