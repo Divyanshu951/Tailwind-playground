@@ -9,6 +9,7 @@ import AppLayoutDarkTheme from "./projects/implementing dark theme/AppLayoutDark
 import AppLayoutGrid from "./projects/grid/AppLayoutGrid";
 import AppLayoutMasking from "./projects/masking/AppLayoutMasking";
 import AppLayoutHF from "./projects/hoverFocusAndOtherState/AppLayoutHF";
+import AppLayoutSvg from "./projects/svgs/AppLayoutSvg";
 
 const router = createBrowserRouter([
   { path: "/", element: <AppLayout />, errorElement: <Error /> },
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
   {
     path: "/hover-focus-n-other-state",
     element: <AppLayoutHF />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/svg",
+    element: <AppLayoutSvg />,
     errorElement: <Error />,
   },
 ]);

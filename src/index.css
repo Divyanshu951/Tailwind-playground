@@ -1,6 +1,5 @@
-@import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import "tailwindcss";
 
 :root {
   --primary-font: "Roboto Mono", monospace;
@@ -9,11 +8,7 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --font-roboto: var(--primary-font);
-  --font-inter: var(--secondary-font);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
   --color-primary: oklch(64.6% 0.222 41.116);
   --breakpoint-3xl: 1500px;
   --shadow-input:
@@ -21,6 +16,45 @@
     0px 0px 0px 1px rgba(25, 28, 33, 0.08);
 
   --animate-marquee: marquee 10s linear infinite;
+  --animate-side-bounce: side-bounce 2s linear infinite;
+  --animate-bell-ring: bell-ring 2s ease-in-out infinite;
+  --animate-bell-bottom: bell-bottom 2s ease-in-out infinite;
+
+  @keyframes bell-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-30deg); /* left */
+    }
+    50% {
+      transform: rotate(30deg); /* right */
+    }
+    75% {
+      transform: rotate(-15deg); /* smaller left */
+    }
+    100% {
+      transform: rotate(0deg); /* back to center */
+    }
+  }
+
+  @keyframes bell-bottom {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(3px);
+    }
+    50% {
+      transform: translateX(0px);
+    }
+    75% {
+      transform: translateX(-3px);
+    }
+    100% {
+      transform: translateX(-6px);
+    }
+  }
 
   @keyframes marquee {
     from {
@@ -30,6 +64,22 @@
       transform: translateX(110%);
     }
   }
+
+  @keyframes side-bounce {
+    from {
+      transform: translateX(-102%);
+    }
+    to {
+      transform: translateX(102%);
+    }
+  }
+}
+
+@theme inline {
+  --font-roboto: var(--primary-font);
+  --font-inter: var(--secondary-font);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 }
 
 .dark {

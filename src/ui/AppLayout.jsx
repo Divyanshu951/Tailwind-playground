@@ -13,6 +13,10 @@ function AppLayout() {
       title: "Hover, Focus and other state",
       path: "hover-focus-n-other-state",
     },
+    {
+      title: "svg",
+      path: "svg",
+    },
   ];
 
   return (
