@@ -87,6 +87,10 @@
   --foreground: var(--color-neutral-50);
 }
 
+.card {
+  @apply flex size-40 items-center justify-center rounded-xl border-2 border-slate-300 shadow-xl;
+}
+
 /* 
 .animate-me {
   animation: marquee 10s linear infinite;
