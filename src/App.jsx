@@ -10,6 +10,7 @@ import AppLayoutGrid from "./projects/grid/AppLayoutGrid";
 import AppLayoutMasking from "./projects/masking/AppLayoutMasking";
 import AppLayoutHF from "./projects/hoverFocusAndOtherState/AppLayoutHF";
 import AppLayoutSvg from "./projects/svgs/AppLayoutSvg";
+import RisingBar from "./projects/raising-bars/RisingBar";
 
 const router = createBrowserRouter([
   { path: "/", element: <AppLayout />, errorElement: <Error /> },
@@ -56,6 +57,11 @@ const router = createBrowserRouter([
   {
     path: "/svg",
     element: <AppLayoutSvg />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/risingBar",
+    element: <RisingBar />,
     errorElement: <Error />,
   },
 ]);

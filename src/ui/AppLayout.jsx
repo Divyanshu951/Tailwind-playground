@@ -17,6 +17,10 @@ function AppLayout() {
       title: "svg",
       path: "svg",
     },
+    {
+      title: "risingBar",
+      path: "risingBar",
+    },
   ];
 
   return (
